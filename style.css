@@ -1,3 +1,126 @@
+/* global styles */
+
 body {
-    background-color: red;
+    overflow: hidden;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+nav {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* header styles */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo-bg {
+    background-image: url(images/wood-bg.png);
+    background-position: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.logo-bg img {
+    max-width: 330px;
+}
+
+.navigation-bg {
+    background-color: darkgreen;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* main styles */
+
+main {
+    padding-top: 127.09px;
+    padding-bottom: 39.09px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+main img.map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* footer styles */
+
+footer {
+    background-color: rgb(38, 175, 38);
+    padding-right: 20px;
+    padding-left: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@layer animals {
+
+    /* main styles */
+
+    .blurred-bg {
+        background-image: url(images/map-blur.png);
+        min-height: 100vh;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .small-card {
+        background-color: white;
+        padding: 10px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-bottom: 10px;
+    }
+
+    .small-card-text {
+        flex-grow: 1;
+    }
+
+    .animal-thumbnail {
+        height: 50px;
+        width: 50px;
+    }
+
 }
